@@ -12,7 +12,7 @@ import Testimonials from './components/Testimonials';
 
 function App() {
   return (
-    <div className=" h-screen">
+    <div className="w-screen h-screen">
      
      <Hero/>
      <Features/>

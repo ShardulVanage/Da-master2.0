@@ -201,7 +201,7 @@ function JobReady() {
        <span className=' text-red-500  animate-pulse '>SALE</span>  Valid Until <span className=' text-red-500  animate-pulse '>{day} {month}</span> . Act Now!
        </h1>
        
-      <div className='flex flex-row justify-center items-center border-t-2 border-r-2 border-red-400 p-2 my-2 '>
+      <div className='w-screen flex flex-row justify-center items-center border-t-2 border-r-2 border-red-400 p-2 my-2 '>
             {/* <div className='flex flex-col justify-center items-center  font-semibold '>
               <p className='sm:text-8xl text-6xl'>{countdown.hours} : </p>
               <p className='text-2xl pr-8 '>Hours</p>
@@ -214,9 +214,9 @@ function JobReady() {
               <p className='sm:text-8xl text-6xl'> {countdown.seconds}</p>
               <p className='text-2xl pr-0'>Seconds</p>
             </div> */}
-            <div class="  flex items-center justify-center px-5 py-5" x-data="beer()" x-init="start()">
+            <div class=" w-screen flex items-center justify-center px-5 py-5" x-data="beer()" x-init="start()">
     <div class="text-slate-100">
-        <h1 class="text-3xl text-center mb-3 font-extralight">When will pubs open in England?*</h1>
+        <h1 class="text-3xl text-center mb-3 font-extralight">.*</h1>
         <div class="text-6xl text-center flex w-full items-center justify-center pl-12">
            
             <div class="w-24 mx-1 p-2 bg-slate-300 text-white rounded-lg sm:block hidden">
