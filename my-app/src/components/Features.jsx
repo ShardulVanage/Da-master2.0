@@ -33,7 +33,7 @@ function Features() {
   return (
     <section className='bg-slate-100 py-32 border-t-2 border-white'>
         <h1 className='text-3xl sm:text-6xl font-bold pb-8 text-center'>Discover Our Exclusive Feature</h1>
-        <div className='sm:px-40 flex flex-col sm:flex-row justify-between items-center'>
+        <div className='sm:px-40 flex sm:flex-row flex-col justify-between items-center h-full'>
             <div className='bg-slate-200 h-full border-4 border-double border-white py-12 w-full sm:w-1/2 flex flex-col justify-center items-center'>
                 <img height={200} width={200} src="https://res.cloudinary.com/dtsuvx8dz/image/upload/v1707753152/wbsags244incans32rex.png" alt="" />
                 <h1 className='py-12 text-2xl sm:text-3xl  text-center '>Experience Learning Through  Action</h1>
@@ -42,7 +42,7 @@ function Features() {
                      Crafting Confidence at Every Step.
                 </p>
             </div>
-         <div className= 'bg-slate-200 border-4 border-double border-white py-12  sm:w-1/2 flex flex-col justify-end items-center'>
+         <div className= 'bg-slate-200 h-full border-4 border-double border-white py-12  sm:w-1/2 flex flex-col justify-end items-center'>
                 <img height={200} width={200} src="https://res.cloudinary.com/dtsuvx8dz/image/upload/v1706986641/mvqnihoedrcvrpzixkiy.png" alt="" />
                 <h1 className='py-12 text-2xl sm:text-3xl  text-center '>Receive Comprehensive Doubt Resolution Assistance</h1>
                 <p className='sm:w-2/3 px-2 text-clip  text-center'>Access Personalized 1-on-1 Chat Support for Doubt Resolution Daily from 6PM to 9AM,

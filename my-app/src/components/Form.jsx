@@ -59,7 +59,7 @@ const [state, setState] = useState(initState);
           className="relative grid grid-cols-1 items-end gap-y-12 py-20 lg:static lg:grid-cols-2 lg:py-28 xl:py-32"
         >
           <Pattern className="absolute -top-32 left-0 w-full sm:-top-5 sm:left-3/4 sm:ml-8 sm:w-auto md:left-2/3 lg:left-auto lg:right-2 lg:ml-0 xl:left-2/3 xl:right-auto" />
-          <div className="flex flex-col justify-center items-center ">
+          <div className="flex flex-col justify-between items-start ">
             <div className='flex flex-row justify-start items-center drop-shadow-2xl py-2 bg-slate-100/20 rounded-full px-4 w-2/4 '>
               <a href='https://api.whatsapp.com/send/?phone=%2B917978652529&text&type=phone_number&app_absent=0' className='flex flex-col justify-center items-c'>
                 <img alt="whatsappicon"  src={"https://res.cloudinary.com/dtsuvx8dz/image/upload/v1706986988/ee8gvpxhvyi2ktrxqiqi.png"} height={50} width={50} />
