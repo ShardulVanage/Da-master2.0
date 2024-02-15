@@ -2,7 +2,7 @@ import React from 'react'
 
 function Pricing() {
   return (
-    <section className='py-24 flex flex-col justify-center items-center bg-gradient-to-r from-rose-400/90 via-fuchsia-500/60 to-indigo-500/60'>
+    <section id='price' className='py-24 flex flex-col justify-center items-center bg-gradient-to-r from-rose-400/90 via-fuchsia-500/60 to-indigo-500/60'>
         <div className=' border-double border-8 bg-white px-4 h-full rounded-3xl  '>
              <h1 className='text-3xl text-center tracking-wide font-extrabold py-4 pt-8'>Data Master Placement Guarantee <br /> Course</h1>
              <p className='text-2xl text-center'>( Get More Than 80% Discount Today )</p>

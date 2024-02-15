@@ -246,9 +246,9 @@ function JobReady() {
 
       </div>
       
-<h1 className='text-3xl sm:text-6xl font-bold py-12 w-4/5'>
+<a href='https://zepanalytics.com/PowerBIMasterclass/' className='text-3xl sm:text-6xl font-bold py-12 w-4/5'>
   Today Only Receive Our <span className='bg-clip-text text-transparent bg-gradient-to-tl from-yellow-200 via-yellow-400 to-yellow-300 drop-shadow-md'>Power Bi</span>  Course Valued at <span className='bg-clip-text text-transparent  bg-gradient-to-r from-rose-400/80 via-fuchsia-500/80 to-indigo-500/80 drop-shadow-md'>₹10,000</span> Absolutely <span className='bg-clip-text text-transparent  bg-gradient-to-r from-rose-400/80 via-fuchsia-500/80 to-indigo-500/80 drop-shadow-md'>Free!</span> Don't Miss Out, Act Now!
-</h1>
+</a>
     </div>
     </section>
   )

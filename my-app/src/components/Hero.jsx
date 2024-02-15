@@ -18,9 +18,9 @@ function Hero() {
 Acquire a comprehensive and Hands-on Learning Experience with daily 1-1 Chat Support for Doubt Resolution and Career Advancement Techniques.
         </p>
         <div className='flex'>
-        <button className='  py-4 bg-gradient-to-r from-rose-400/60 via-fuchsia-500/60 to-indigo-500/60 px-24 rounded-2xl font-medium text-white border-double border-8'>
+        <a href='#price' className='  py-4 bg-gradient-to-r from-rose-400/60 via-fuchsia-500/60 to-indigo-500/60 px-24 rounded-2xl font-medium text-white border-double border-8'>
             Endroll Know
-        </button>
+        </a>
         </div>
     </div>
     <div className=''>
