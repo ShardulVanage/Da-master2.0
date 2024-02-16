@@ -11,10 +11,10 @@ function Hero() {
  <div className= 'bg- flex  flex-col sm:flex-row  justify-center items-center'>
     <div className='w-screen  sm:w-5/12 border-t-2 border-l-2 border-solid p-8 sm:ml-0 pl-4 '>
         
-        <h2 className='text-base sm:text-2xl  font-bold text-left py-2'>
+        <h2 className='text-base sm:text-2xl  font-bold text-center sm:text-left py-2'>
          Master Every Tool in the Data Science, Analytics, and Engineering Arsenal and Secure Your Dream Job Upon Course Completion.   
         </h2>
-        <p className='text-base   text-clip text-left py-2'>
+        <p className='text-base   text-clip text-center sm:text-left py-2'>
 Acquire a comprehensive and Hands-on Learning Experience with daily 1-1 Chat Support for Doubt Resolution and Career Advancement Techniques.
         </p>
         <div className='flex'>

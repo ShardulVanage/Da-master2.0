@@ -30,7 +30,7 @@ function Pricing() {
                 <li>Access to Free Future Updates</li>
              </ul>
              <hr />
-             <div  className=' text-sm sm:text-xl bg-gradient-to-r from-red-300 to-pink-400 my-2  py-7 px-12 sm:px-24 rounded-2xl font-medium  border-double border-8'>
+             <div  className='text-center text-sm sm:text-xl bg-gradient-to-r from-red-300 to-pink-400 my-2  py-7 px-12 sm:px-24 rounded-2xl font-medium  border-double border-8'>
                 <a href="https://pages.razorpay.com/ZepDAM" className='text-white font-bold'>INDIAN Student</a> <span className='text-white'>/</span>
                 <a href="https://pages.razorpay.com/ZepDAMINT" className='text-white font-bold'> INTERNATION Student </a>
              </div>

@@ -56,7 +56,7 @@ function JobReady() {
   return (
     <section className='bg-slate-100'>
       <div className=' flex flex-col justify-center items-center'>
-        <h1 className='text-3xl sm:text-6xl font-bold py-12'>
+        <h1 className='text-3xl sm:text-6xl font-bold py-12 text-center'>
           Empowering You to Achieve Job Readiness.
         </h1>
         <p className='text-xl w-1/2'>
