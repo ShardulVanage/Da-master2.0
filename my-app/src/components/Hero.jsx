@@ -9,7 +9,7 @@ function Hero() {
         </div>
             <h2 className='text-3xl md:text-6xl w-full sm:w-4/6 font-bold py-4 text-center'>Unleash Your Data Superpowers and Guarantee Your Career Success with a <span className='bg-clip-text text-transparent  bg-gradient-to-r from-rose-400/60 via-fuchsia-500/60 to-indigo-500/60'>100%</span> Placement Promise</h2>
  <div className= 'bg- flex  flex-col sm:flex-row  justify-center items-center'>
-    <div className='w-screen  sm:w-5/12 border-t-2 border-l-2 border-solid p-8 sm:ml-0 pl-4 '>
+    <div className='w-screen  sm:w-5/12 border-t-2 border-l-2 border-solid p-8 sm:ml-0 pl-8 4 '>
         
         <h2 className='text-base sm:text-2xl  font-bold text-center sm:text-left py-2'>
          Master Every Tool in the Data Science, Analytics, and Engineering Arsenal and Secure Your Dream Job Upon Course Completion.   
@@ -17,7 +17,7 @@ function Hero() {
         <p className='text-base   text-clip text-center sm:text-left py-2'>
 Acquire a comprehensive and Hands-on Learning Experience with daily 1-1 Chat Support for Doubt Resolution and Career Advancement Techniques.
         </p>
-        <div className='flex'>
+        <div className='flex flex-col justify-center'>
         <button className='  py-4 bg-gradient-to-r from-rose-400/60 via-fuchsia-500/60 to-indigo-500/60 px-24 rounded-2xl font-medium text-white border-double border-8'>
             Endroll Know
         </button>
