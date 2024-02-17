@@ -51,7 +51,7 @@ const [state, setState] = useState(initState);
     <section
       id="free-chapters"
       aria-label="Free preview"
-      className="scroll-mt-14 bg-slate-700 sm:scroll-mt-32"
+      className="scroll-mt-14 bg-gradient-to-r from-blue-700 via-blue-900 to-gray-900 sm:scroll-mt-32"
     >
       <div className="overflow-hidden lg:relative">
         <Container
@@ -93,7 +93,7 @@ const [state, setState] = useState(initState);
                   placeholder="Name"
                   className="peer relative z-10 w-full appearance-none bg-transparent px-4 py-2 text-base text-white placeholder:text-white/70 focus:outline-none sm:py-3"
                 />
-                <div className="absolute inset-0 rounded-md border border-white/20 peer-focus:border-blue-300 peer-focus:bg-slate-500 peer-focus:ring-1 peer-focus:ring-blue-300 sm:rounded-xl" />
+                <div className="absolute inset-0 rounded-md border border-white/20 peer-focus:border-blue-300 peer-focus:bg-slate-500/40 peer-focus:ring-1 peer-focus:ring-blue-300 sm:rounded-xl" />
               </div>
               {/* <Button
                 type="submit"
@@ -115,7 +115,7 @@ const [state, setState] = useState(initState);
                   placeholder="Email"
                   className="peer relative z-10 w-full appearance-none bg-transparent px-4 py-2 text-base text-white placeholder:text-white/70 focus:outline-none sm:py-3"
                 />
-                <div className="absolute inset-0 rounded-md border rounded-r-none border-white/20 peer-focus:border-blue-300 peer-focus:bg-slate-500 peer-focus:ring-1 peer-focus:ring-blue-300 sm:rounded-xl" />
+                <div className="absolute inset-0 rounded-md border rounded-r-none border-white/20 peer-focus:border-blue-300 peer-focus:bg-slate-500/40 peer-focus:ring-1 peer-focus:ring-blue-300 sm:rounded-xl" />
               </div>
            
             </div>
@@ -131,7 +131,7 @@ const [state, setState] = useState(initState);
                   placeholder="+91"
                   className="peer relative z-10 w-full appearance-none bg-transparent px-4 py-2 text-base text-white placeholder:text-white/70 focus:outline-none sm:py-3"
                 />
-                <div className="absolute inset-0 rounded-md border border-white/20 peer-focus:border-blue-300 peer-focus:bg-slate-500 peer-focus:ring-1 peer-focus:ring-blue-300 sm:rounded-xl" />
+                <div className="absolute inset-0 rounded-md border border-white/20 peer-focus:border-blue-300 peer-focus:bg-slate-500/40 peer-focus:ring-1 peer-focus:ring-blue-300 sm:rounded-xl" />
               </div>
            
             </div>
@@ -147,7 +147,7 @@ const [state, setState] = useState(initState);
                   placeholder="Phone"
                   className="peer relative z-10 w-full appearance-none bg-transparent px-4 py-2 text-base text-white placeholder:text-white/70 focus:outline-none sm:py-3"
                 />
-                <div className="absolute inset-0 rounded-md border border-white/20 peer-focus:border-blue-300 peer-focus:bg-slate-500 peer-focus:ring-1 peer-focus:ring-blue-300 sm:rounded-xl" />
+                <div className="absolute inset-0 rounded-md border border-white/20 peer-focus:border-blue-300 peer-focus:bg-slate-500/40 peer-focus:ring-1 peer-focus:ring-blue-300 sm:rounded-xl" />
               </div>
            
             </div>
@@ -164,7 +164,7 @@ const [state, setState] = useState(initState);
                   placeholder="Whatsapp"
                   className="peer relative z-10 w-full appearance-none bg-transparent px-4 py-2 text-base text-white placeholder:text-white/70 focus:outline-none sm:py-3"
                 />
-                <div className="absolute inset-0 rounded-md border border-white/20 peer-focus:border-blue-300 peer-focus:bg-slate-500 peer-focus:ring-1 peer-focus:ring-blue-300 sm:rounded-xl" />
+                <div className="absolute inset-0 rounded-md border border-white/20 peer-focus:border-blue-300 peer-focus:bg-slate-500/40 peer-focus:ring-1 peer-focus:ring-blue-300 sm:rounded-xl" />
               </div>
            
             </div>
@@ -179,20 +179,20 @@ const [state, setState] = useState(initState);
                   placeholder="Message"
                   className="peer relative z-10 w-full appearance-none bg-transparent px-4 py-2 text-base text-white placeholder:text-white/70 focus:outline-none sm:py-3"
                 />
-                <div className="absolute inset-0 rounded-md border border-white/20 peer-focus:border-blue-300 peer-focus:bg-slate-500 peer-focus:ring-1 peer-focus:ring-blue-300 sm:rounded-xl" />
+                <div className="absolute inset-0 rounded-md border border-white/20 peer-focus:border-blue-300 peer-focus:bg-slate-500/40 peer-focus:ring-1 peer-focus:ring-blue-300 sm:rounded-xl" />
               </div>
            
             </div>
 <div className='flex flex-row justify-evenly items-center mt-6'>
-          <Button
+          <a
                 type="submit"
                 color="white"
-                className=" w-full   py-4 bg-gradient-to-r from-rose-400/60 via-fuchsia-500/60 to-indigo-500/60 px-24 rounded-2xl font-medium border-double border-8 text-slate-50 hover:text-slate-100   sm:relative sm:z-10  sm:flex-none"
+                className=" w-full text-center   py-4 bg-gradient-to-r from-gray-100/20 to-gray-300/30 px-24 rounded-2xl font-medium border-double border-8 text-slate-50 hover:text-slate-100   sm:relative sm:z-10  sm:flex-none"
                 
         
               >
                 Submit
-              </Button> 
+              </a> 
             
 </div>
           </form>

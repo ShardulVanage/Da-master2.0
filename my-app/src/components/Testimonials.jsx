@@ -39,7 +39,7 @@ const testimonials = [
     ],
     [
         {
-            content: "Amazing experience with Zep. Grateful to Satyajit! Highly recommend for real-time exposure, theoretical knowledge, online-live demonstrations, and coding practice. Thanks to the entire team :)",
+            content: "Absolutely amazing experience with Zep! Immensely grateful to Satyajit for his guidance. Highly recommend for real-time exposure, comprehensive theoretical knowledge,  and hands-on coding practice. Heartfelt thanks to the entire team :)",
             author: {
                 name: "Debi Prasad Mishra",
                 role: "Senior Business Intelligence Engineer",
@@ -55,7 +55,7 @@ const testimonials = [
             }
         },
         {
-            content: "Zep Analytics provided top-notch training in data analytics. The instructors were knowledgeable, and the course materials were comprehensive. I gained valuable skills that have boosted my career prospects.",
+            content: "Zep Analytics delivers unparalleled training in data analytics. The instructors are exceptionally knowledgeable, and the course materials are comprehensive. I have acquired valuable skills that have significantly enhanced my career prospects",
             author: {
                 name: 'Rahul Kapoor',
                 role: 'Business Analyst',
@@ -99,7 +99,7 @@ function Testimonial({ author, children }) {
                 </div>
             </blockquote>
             <figcaption className="mt-6 flex items-center">
-                <div className="overflow-hidden rounded-full bg-slate-50">
+                <div className="overflow-hidden rounded-full bg-white">
                     <img
                         className="h-12 w-12 object-cover"
                         src={author.image}
@@ -121,9 +121,9 @@ function Testimonial({ author, children }) {
 
 function Testimonials() {
   return (
-<section className="py-8 sm:py-10 lg:py-16 ">
+<section className="py-8 sm:py-10 lg:py-16 bg-white">
             <Container className="text-center">
-                <h2 className="font-display bg-clip-text text-transparent  bg-gradient-to-r from-rose-400/80 via-fuchsia-500/80 to-indigo-500/80 drop-shadow-md text-4xl font-bold tracking-tight text-slate-900">
+                <h2 className="font-display  drop-shadow-md text-4xl font-bold tracking-tight text-slate-900">
                     Some kind words from our Student...
                 </h2>
                 <p className="mt-4 text-lg tracking-tight text-slate-600">
@@ -142,12 +142,13 @@ function Testimonials() {
                             {testimonials
                                 .map((column) => column[0])
                                 .map((testimonial, testimonialIndex) => (
-                                    <li key={testimonialIndex} className="lg:hidden ">
+                                    <li key={testimonialIndex} className="lg:hidden bg- ">
                                         <Testimonial author={testimonial.author}>
                                             {testimonial.content}
                                         </Testimonial>
                                     </li>
                                 ))}
+                                
                             {testimonials.map((column, columnIndex) => (
                                 <li
                                     key={columnIndex}
@@ -160,7 +161,7 @@ function Testimonials() {
                                                 <li
                                                     key={testimonialIndex}
                                                     className={clsx(
-                                                        testimonialIndex === 0 && 'hidden lg:list-item bg-white',
+                                                        testimonialIndex === 1 && 'hidden lg:list-item bg-white',
                                                         testimonialIndex === 1 && 'lg:mt-8 bg-white',
                                                         testimonialIndex > 1 && 'mt-8 bg-white'
                                                     )}

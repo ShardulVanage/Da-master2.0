@@ -9,6 +9,7 @@ import Pricing from './components/Pricing';
 import Author from './components/Author';
 import Footer from './components/Footer';
 import Testimonials from './components/Testimonials';
+import Certificate from './components/Certificate';
 
 function App() {
   return (
@@ -17,11 +18,12 @@ function App() {
      <Hero/>
      <Features/>
      <Form/>
-     <Brocher/>
      <JobReady/>
+     <Brocher/>
      <Pricing/>
      <Author/>
      <Testimonials/>
+     <Certificate/>
      {/* <Footer/> */}
     </div>
   );

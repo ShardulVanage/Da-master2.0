@@ -2,29 +2,29 @@ import React from 'react'
 
 function Hero() {
   return (
-    <section className='w-screen sm:h-screen bg-slate-300 flex flex-col justify-center items-center '>
+    <section className='text-white w-screen sm:h-screen bg-gradient-to-r from-gray-950  via-blue-900 to-blue-900/90 flex flex-col justify-center items-center '>
         <div className='flex flex-row  justify-center items-center py-8'>
-            <img className='h-12 m-1 bg-transparent ' src="https://res.cloudinary.com/dtsuvx8dz/image/upload/v1707751033/nkl97npsivikvukvvcbi.png" alt="" />
+            <img className='drop-shadow-2xl h-12 m-1 bg-transparent ' src="https://res.cloudinary.com/dtsuvx8dz/image/upload/v1706986565/hqatxpsjdg3zeql20jfe.png" alt="" />
             <h1 className=' text-3xl font-extrabold font-mono text-white '>Zep Analytics</h1>
         </div>
-            <h2 className='text-3xl md:text-6xl w-full sm:w-4/6 font-bold py-4 text-center'>Unleash Your Data Superpowers and Guarantee Your Career Success with a <span className='bg-clip-text text-transparent  bg-gradient-to-r from-rose-400/60 via-fuchsia-500/60 to-indigo-500/60'>100%</span> Placement Promise</h2>
+            <h2 className='text-3xl md:text-6xl w-11/12 sm:w-4/6 font-bold py-4 text-center'>Unleash Your Data Superpowers and Become a  <span className='bg-clip-text text-transparent bg-gradient-to-tr from-violet-500 to-orange-300'> Data Analytics </span>Superstar</h2>
  <div className= 'bg- flex  flex-col sm:flex-row  justify-center items-center'>
-    <div className='w-screen  sm:w-5/12 border-t-2 border-l-2 border-solid p-8 sm:ml-0 pl-8 4 '>
+    <div className='w-screen  sm:w-5/12  p-8 sm:ml-0 pl-8 4 '>
         
-        <h2 className='text-base sm:text-2xl  font-bold text-center sm:text-left py-2'>
-         Master Every Tool in the Data Science, Analytics, and Engineering Arsenal and Secure Your Dream Job Upon Course Completion.   
+        <h2 className='text-base sm:text-2xl  font-bold text-balance text-center sm:text-left py-2'>
+        Master every tool in the Data Analytics domain and secure your dream job upon course completion.
         </h2>
-        <p className='text-base   text-clip text-center sm:text-left py-2'>
-Acquire a comprehensive and Hands-on Learning Experience with daily 1-1 Chat Support for Doubt Resolution and Career Advancement Techniques.
+        <p className='text-xs sm:text-base   text-clip text-center sm:text-left py-2'>
+            India's No.1 Data Analytics Course having multiple features to excel and make you job ready for various roles.
         </p>
         <div className='flex flex-col justify-center'>
-        <button className='  py-4 bg-gradient-to-r from-rose-400/60 via-fuchsia-500/60 to-indigo-500/60 px-24 rounded-2xl font-medium text-white border-double border-8'>
-            Endroll Know
-        </button>
+        <a href='#free-chapters' className=' text-center my-4   py-4 bg-gradient-to-r from-gray-100/20 to-gray-300/30 font-medium text-white border-slate-100/40 border-double border-8'>
+            Enroll Now
+        </a>
         </div>
     </div>
     <div className=''>
-        <img className='' src="https://res.cloudinary.com/dtsuvx8dz/image/upload/v1707745259/od4kggpbo1pdotplc1ox.png" alt="" />
+        <img  src="https://res.cloudinary.com/dtsuvx8dz/image/upload/v1708175089/r0ltfeerioe2xlbcvo2w.png" alt="" />
     </div>
  <div>
 

@@ -59,9 +59,8 @@ function JobReady() {
         <h1 className='text-3xl sm:text-6xl font-bold py-12 text-center'>
           Empowering You to Achieve Job Readiness.
         </h1>
-        <p className='text-xl w-1/2'>
-          Our courses have empowered over 2000 learners, 
-          guiding them toward their dreams by elevating their skills to supreme levels through our comprehensive roadmap.
+        <p className='text-xl w-4/5 sm:w-1/2 text-center'>
+          Our courses have empowered over 2000 learners, guiding them towards their dreams by elevating their skills to supreme levels through our comprehensive roadmap.
         </p>
       </div>
          <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
@@ -70,7 +69,7 @@ function JobReady() {
           <div className="flex">
             <div className="flex flex-col items-center mr-4">
               <div>
-                <div className="bg-gradient-to-r from-rose-400/60 via-fuchsia-500/60 to-indigo-500/60  text-white flex items-center justify-center w-10 h-10 border rounded-full">
+                <div className="bg-gradient-to-r from-blue-400 to-blue-900  text-white flex items-center justify-center w-10 h-10 border rounded-full">
                  <p>1</p>
                 </div>
               </div>
@@ -86,7 +85,7 @@ function JobReady() {
           <div className="flex">
             <div className="flex flex-col items-center mr-4">
               <div>
-                <div className="bg-gradient-to-r from-rose-400/60 via-fuchsia-500/60 to-indigo-500/60  text-white flex items-center justify-center w-10 h-10 border rounded-full">
+                <div className="bg-gradient-to-r from-blue-400 to-blue-900  text-white flex items-center justify-center w-10 h-10 border rounded-full">
                   <p>2</p>
                 </div>
               </div>
@@ -102,23 +101,24 @@ function JobReady() {
           <div className="flex">
             <div className="flex flex-col items-center mr-4">
               <div>
-                <div className="bg-gradient-to-r from-rose-400/60 via-fuchsia-500/60 to-indigo-500/60  text-white flex items-center justify-center w-10 h-10 border rounded-full">
+                <div className="bg-gradient-to-r from-blue-400 to-blue-900  text-white flex items-center justify-center w-10 h-10 border rounded-full">
                   <p>3</p>
                 </div>
               </div>
               <div className="w-px h-full bg-gray-300" />
             </div>
             <div className="pt-1 pb-8">
-              <p className="mb-2 text-lg font-bold">Unlock Pro Career Growth Strategie</p>
+              <p className="mb-2 text-lg font-bold">Master pro Career Growth Hacks</p>
               <p className="text-gray-700">
-                Alongside the course, master LinkedIn Growth Hacks, Professional Resume Building, and Proven Job Search Techniques across diverse online platforms.
+               Simultaneously with the course, you will be learning Linkedin Growth Hacks, Pro Resume Building and Proven techniques to find jobs through various online platforms.
+
               </p>
             </div>
           </div>
           <div className="flex">
             <div className="flex flex-col items-center mr-4">
               <div>
-                <div className="bg-gradient-to-r from-rose-400/60 via-fuchsia-500/60 to-indigo-500/60  text-white flex items-center justify-center w-10 h-10 border rounded-full">
+                <div className="bg-gradient-to-r from-blue-400 to-blue-900  text-white flex items-center justify-center w-10 h-10 border rounded-full">
                 <p>4</p>
                 </div>
               </div>
@@ -136,7 +136,7 @@ function JobReady() {
            <div className="flex">
             <div className="flex flex-col items-center mr-4">
               <div>
-                <div className="bg-gradient-to-r from-rose-400/60 via-fuchsia-500/60 to-indigo-500/60  text-white flex items-center justify-center w-10 h-10 border rounded-full">
+                <div className="bg-gradient-to-r from-blue-400 to-blue-900  text-white flex items-center justify-center w-10 h-10 border rounded-full">
                  <p>5</p>
                 </div>
               </div>
@@ -145,7 +145,8 @@ function JobReady() {
             <div className="pt-1 pb-8">
               <p className="mb-2 text-lg font-bold">Secure Your Placement</p>
               <p className="text-gray-700">
-           Utilize Our Placement Guarantee Program, featuring Job Referrals, Unlimited Mock Interviews, and Company Tie-up Interviews, to Secure Your Dream Job and Launch Your Career in the Data Science & Engineering Domain
+           With our Resume guidance and Interview preparation series, you will be able to get your dream job and you can start your career in Data Analytics Domain.
+
       
               </p>
             </div>
@@ -153,7 +154,7 @@ function JobReady() {
           <div className="flex">
             <div className="flex flex-col items-center mr-4">
               <div>
-                <div className="bg-gradient-to-r from-rose-400/60 via-fuchsia-500/60 to-indigo-500/60  text-white flex items-center justify-center w-10 h-10 border rounded-full">
+                <div className="bg-gradient-to-r from-blue-400 to-blue-900  text-white flex items-center justify-center w-10 h-10 border rounded-full">
                   <svg
                     className="w-6 text-white"
                     stroke="currentColor"
@@ -184,24 +185,24 @@ function JobReady() {
             alt=""
           />
         </div>
-      </div>
+      </div>  
     </div>
       {/* Course Value */}
     <div className='flex flex-col justify-center items-center'>
-      <h1 className='text-3xl text-center sm:text-6xl font-bold py-12 w-4/5'>
-          Access the Complete Package: <span className='bg-clip-text text-transparent  bg-gradient-to-r from-rose-400/80 via-fuchsia-500/80 to-indigo-500/80 drop-shadow-md'>24 + Chapters, Projects, and Job Hunting Tools</span> Valued at ₹50,000.
+      <h1 className='text-3xl text-center sm:text-6xl font-bold py-12 sm:w-4/6'>
+          Access the Complete Package: <span className='bg-clip-text text-transparent bg-gradient-to-t from-blue-400 to-blue-700 drop-shadow-md'>55+ hours contents, 200+ quizes, 5 Industry level projects</span> Valued at ₹50,000.
       </h1>
       <h1 className='text-3xl text-center sm:text-5xl font-bold py-12 w-4/5'>
-          Available at an Offer Price of <span className='bg-clip-text text-transparent  bg-gradient-to-r from-rose-400/80 via-fuchsia-500/80 to-indigo-500/80 drop-shadow-md'> ₹4,999 </span> + GST.
+          Available at an Offer Price of <span className='bg-clip-text text-transparent  bg-gradient-to-r from-blue-400 to-blue-800 drop-shadow-md'> ₹4,999 </span> .
       </h1>
-      <a className='text-white text-xs sm:text-xl bg-gradient-to-r from-red-300 to-pink-400 my-4  py-8 px-24 sm:px-36 rounded-2xl font-medium  border-double border-8' href="">
+      <a href='#free-chapters' className='text-white text-xs sm:text-xl bg-gradient-to-r from-blue-700 via-blue-800 to-gray-900 my-4  py-8 px-24 sm:px-36 rounded-2xl font-medium  border-double border-8' >
         CLICK HERE TO ENROLL
       </a>
        <h1 className='text-3xl text-center sm:text-5xl font-bold py-12 w-4/5'>
        <span className=' text-red-500  animate-pulse '>SALE</span>  Valid Until <span className=' text-red-500  animate-pulse '>{day} {month}</span> . Act Now!
        </h1>
        
-      <div className='w-screen flex flex-row justify-center items-center border-t-2 border-r-2 border-red-400 p-2 my-2 '>
+      <div className='w-screen flex flex-row justify-center items-center   p-2 my-2 '>
             {/* <div className='flex flex-col justify-center items-center  font-semibold '>
               <p className='sm:text-8xl text-6xl'>{countdown.hours} : </p>
               <p className='text-2xl pr-8 '>Hours</p>
@@ -215,24 +216,24 @@ function JobReady() {
               <p className='text-2xl pr-0'>Seconds</p>
             </div> */}
             <div class=" w-screen flex items-center justify-center px-5 py-5" x-data="beer()" x-init="start()">
-    <div class="text-slate-100">
+    <div class="text-slate-100 pb-8">
         <h1 class="text-3xl text-center mb-3 font-extralight">.*</h1>
-        <div class="text-6xl text-center flex w-full items-center justify-center pl-12">
+        <div class="text-6xl text-center flex w-full items-center justify-center sm:scale-150 ">
            
             <div class="w-24 mx-1 p-2 bg-slate-300 text-white rounded-lg sm:block hidden">
-                <div class="font-mono leading-none bg-clip-text text-transparent  bg-gradient-to-r from-rose-400/60 via-fuchsia-500/60 to-indigo-500/60" x-text="days">00</div>
+                <div class="font-mono leading-none bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-emerald-400" x-text="days">00</div>
                 <div class="font-mono uppercase text-sm leading-none">Days</div>
             </div>
             <div class="w-24 mx-1 p-2 bg-slate-300 text-white rounded-lg">
-                <div class="font-mono leading-none bg-clip-text text-transparent  bg-gradient-to-r from-rose-400/60 via-fuchsia-500/60 to-indigo-500/60" x-text="hours">{countdown.hours}</div>
+                <div class="font-mono leading-none bg-clip-text text-transparent  bg-gradient-to-r from-blue-400 to-emerald-400" x-text="hours">{countdown.hours}</div>
                 <div class="font-mono uppercase text-sm leading-none">Hours</div>
             </div>
             <div class="w-24 mx-1 p-2 bg-slate-300 text-white rounded-lg">
-                <div class="font-mono leading-none bg-clip-text text-transparent  bg-gradient-to-r from-rose-400/60 via-fuchsia-500/60 to-indigo-500/60" x-text="minutes">{countdown.minutes}</div>
+                <div class="font-mono leading-none bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-emerald-400" x-text="minutes">{countdown.minutes}</div>
                 <div class="font-mono uppercase text-sm leading-none">Minutes</div>
             </div>
             <div class="w-24 mx-1 p-2 bg-slate-300 text-white rounded-lg">
-                <div class="font-mono leading-none bg-clip-text text-transparent  bg-gradient-to-r from-rose-400/60 via-fuchsia-500/60 to-indigo-500/60" x-text="seconds">{countdown.seconds}</div>
+                <div class="font-mono leading-none bg-clip-text text-transparent  bg-gradient-to-r from-blue-400 to-emerald-400" x-text="seconds">{countdown.seconds}</div>
                 <div class="font-mono uppercase text-sm leading-none">Seconds</div>
             </div>
             <div class="text-2xl mx-1 font-extralight"></div>
@@ -246,9 +247,7 @@ function JobReady() {
 
       </div>
       
-<a href='https://zepanalytics.com/PowerBIMasterclass/' className='text-3xl sm:text-6xl font-bold py-12 w-4/5'>
-  Today Only Receive Our <span className='bg-clip-text text-transparent bg-gradient-to-tl from-yellow-200 via-yellow-400 to-yellow-300 drop-shadow-md'>Power Bi</span>  Course Valued at <span className='bg-clip-text text-transparent  bg-gradient-to-r from-rose-400/80 via-fuchsia-500/80 to-indigo-500/80 drop-shadow-md'>₹10,000</span> Absolutely <span className='bg-clip-text text-transparent  bg-gradient-to-r from-rose-400/80 via-fuchsia-500/80 to-indigo-500/80 drop-shadow-md'>Free!</span> Don't Miss Out, Act Now!
-</a>
+
     </div>
     </section>
   )

@@ -32,12 +32,12 @@ function Author() {
       aria-labelledby="author-title"
       className="relative scroll-mt-14 pb-3 pt-8 sm:scroll-mt-32 sm:pb-16 sm:pt-10 lg:pt-16"
     >
-      <div className="absolute inset-x-0 bottom-0 top-1/2 text-slate-900/10 [mask-image:linear-gradient(transparent,white)]">
+      <div className="absolute inset-x-0 bottom-0 top-1/2 text-slate-900/40 [mask-image:linear-gradient(transparent,white)] rotate-180">
         <GridPattern x="50%" y="100%" />
       </div>
       <div className="relative mx-auto max-w-5xl pt-16 sm:px-6">
-        <div className="bg-slate-50 pt-px sm:rounded-6xl">
-          <div className="drop-shadow-md relative mx-auto -mt-16 h-44 w-44 overflow-hidden rounded-full bg-slate-200 md:float-right md:h-64 md:w-64 md:[shape-outside:circle(40%)] lg:mr-20 lg:h-72 lg:w-72">
+        <div className="bg-white/60 pt-px sm:rounded-6xl">
+          <div className="drop-shadow-md relative mx-auto -mt-16 h-44 w-44 overflow-hidden rounded-full bg-white md:float-right md:h-64 md:w-64 md:[shape-outside:circle(40%)] lg:mr-20 lg:h-72 lg:w-72">
             <img
               className="absolute inset-0 h-full w-full object-cover "
               src='https://res.cloudinary.com/dtsuvx8dz/image/upload/v1707977098/ctohbqrxrmwziauyw1iz.jpg'
@@ -46,32 +46,30 @@ function Author() {
             />
           </div>
           <div className=" px-4 py-10 sm:px-10 sm:py-16 md:py-20 lg:px-20 lg:py-32 text-left">
-            <SectionHeading className='text-red-300  border-double border-4 border-red-300' number="5" id="author-title">
+            <SectionHeading className='text-blue-300  border-double border-4 border-blue-300' number="5" id="author-title">
               Instructor
             </SectionHeading>
             <p className="mt-8 text-left font-display text-3xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
-              <span className="block bg-clip-text text-transparent  bg-gradient-to-r from-rose-400/80 via-fuchsia-500/80 to-indigo-500/80 drop-shadow-md">Satyajit Pattnaik –</span> Hey
+              <span className="block bg-clip-text text-transparent  bg-gradient-to-r from-blue-700 via-blue-800 to-gray-900 drop-shadow-md">Satyajit Pattnaik –</span> Hey
               there, Im the Creator behind Data Analytics Masters - 2024 Edition.
             </p>
-            <p className="mt-4 text-lg text-left tracking-tight text-slate-700">
-           Im not just a Certified Data Scientist and TensorFlow Certified Developer—Im a passionate educator with 12+ years of experience transforming raw data into valuable insights across diverse industries like telecom, cyber security, and e-commerce. 
-           I have trained over 10,000 students and hold an average trainer score of 9+, proving my dedication to delivering impactful learning experiences.
+            <p className="mt-4 text-lg text-left tracking-tight text-slate-700 [&>span]:font-medium">
+              Certified Data Scientist & Tensorflow Certified Developer <br />
+                  Number of students trained so far: <span>10000+</span> <br />
+                                Average Trainer Score: <span>9+</span> <br />
+                          
+              <span>12+ years experience working in Data Analytics
+                 and Data Sciences </span>across different industry verticals including telecom, cyber security, insurance, e-commerce etc.
+                <span> Owner of more than 20+ data communities over the globe, and runs a small YouTube channel on my name having 38,000+ subscribers</span>
             </p>
-            <p className="mt-8 flex flex-col sm:flex-row ">
-              <a
-                href="https://twitter.com/pattnaiksat89"
-                className="inline-flex items-center text-base font-medium tracking-tight text-blue-600"
-              >
-                <TwitterIcon className="h-10 w-14 fill-current " />
-                <span className="ml-4">Follow on Twitter</span>
-                
-              </a>
+            <div className="mt-8 flex  justify-evenly  items-center flex-row ">
+            
                <a
                 href="https://www.linkedin.com/in/satyajitpattnaik/"
                 className=" sm:ml-16 inline-flex items-center text-base font-medium tracking-tight text-blue-400"
               >
                 <LinkdinIcon className="h-10 w-14 fill-current " />
-                <span className="ml-4 pt-1">Follow on Linkdin</span>
+                <span className="sm:ml-4 pt-1 font-bold"> Linkdin</span>
              
               </a>
               <a
@@ -79,10 +77,10 @@ function Author() {
                 className=" sm:ml-16 inline-flex items-center text-base font-medium tracking-tight text-red-500"
               >
               <YoutubeIcon className="h-10 w-14 fill-current " />
-                <span className="ml-4 pt-1">Subscribe on youtube</span>
+                <span className="ml-1 sm:ml-4 pt-1 font-bold"> Youtube</span>
                 
               </a>
-            </p>
+            </div>
           </div>
         </div>
       </div>

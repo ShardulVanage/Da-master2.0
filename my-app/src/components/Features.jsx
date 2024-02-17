@@ -3,57 +3,71 @@ import React from 'react'
 function Features() {
     const videos = [
   {
-    title: 'Industrial Internship',
+    title: 'Self Paced Program with 24X7 Support',
     description:
-      'Gain Practical Experience Through Industrial Internship Opportunities.',
-    image: "https://res.cloudinary.com/dtsuvx8dz/image/upload/v1706986640/nxdawnces4hqktiyz2vb.png",
+      'Learn the program at your own pace',
+    image: "https://res.cloudinary.com/dtsuvx8dz/image/upload/v1706986641/d7uppu53w8rty5tbeagz.png",
     runtime: { minutes: 16, seconds: 54 },
   },
   {
-    title: 'Certification ',
+    title: 'Course Completion Certificate',
     description:
-      'Unlock Your Potential with Professional Certification Courses.',
+      'Get yourself certified after completition of the course.',
      image: "https://res.cloudinary.com/dtsuvx8dz/image/upload/v1706986641/jwz5drl4747cn6ckfmyk.png",
     runtime: { minutes: 9, seconds: 12 },
   },
   {
-    title: 'Job Hunting Techniques',
+    title: 'Internship Certificate',
     description:
-      'Master Essential Job Hunting Strategies for Success.',
-    image: "https://res.cloudinary.com/dtsuvx8dz/image/upload/v1707758806/vjs3n7kzbuc5sd9oiwmp.png",
+      'Get a score of 80% in the assignments and you will be handed over an internship offer.',
+    image: 'https://res.cloudinary.com/dtsuvx8dz/image/upload/v1706986640/nxdawnces4hqktiyz2vb.png',
     runtime: { minutes: 23, seconds: 25 },
   },
   {
-    title: 'Lifetime Access',
+    title:' Class Recordings.',
     description:
-      'Enjoy Lifetime Access to Exclusive Course Content',
-    image: "https://res.cloudinary.com/dtsuvx8dz/image/upload/v1707758944/yectaghodotp0uygve7l.png",
+      ' Unlimited Hassle Free Accesst',
+    image: "https://res.cloudinary.com/dtsuvx8dz/image/upload/v1706986641/tjkji3aribsc62r7qnzi.png",
     runtime: { minutes: 28, seconds: 44 },
-  },]
+  },
+ {
+    title:'24X7 chat support  ',
+    description:
+      ' Get unlimited chat support from our experts',
+    image: "https://res.cloudinary.com/dtsuvx8dz/image/upload/v1708164754/gwohsoi1xgpuq2fmryay.png",
+    runtime: { minutes: 28, seconds: 44 },
+  }, {
+    title:'Project Based Learning with Intense Knowledge.',
+    description:
+      ' Learn the skills by developing different projects throughout the sessions.',
+    image: "https://res.cloudinary.com/dtsuvx8dz/image/upload/v1706986640/hjcnia3geraxdzrynkgf.png",
+    runtime: { minutes: 28, seconds: 44 },
+  }, 
+]
   return (
     <section className='bg-slate-100 py-32 border-t-2 border-white'>
-        <h1 className='text-3xl sm:text-6xl font-bold pb-8 text-center'>Discover Our Exclusive Feature</h1>
+        <h1 className='text-3xl sm:text-6xl font-bold pb-8 text-center'>Discover our exclusive feature!!</h1>
         <div className='sm:px-40 flex sm:flex-row flex-col justify-between items-center h-full'>
             <div className='bg-slate-200 h-full border-4 border-double border-white py-12 w-full sm:w-1/2 flex flex-col justify-center items-center'>
                 <img height={200} width={200} src="https://res.cloudinary.com/dtsuvx8dz/image/upload/v1707753152/wbsags244incans32rex.png" alt="" />
-                <h1 className='py-12 text-2xl sm:text-3xl  text-center '>Experience Learning Through  Action</h1>
+                <h1 className='py-12 text-2xl sm:text-3xl  text-center '>Experience learning through  action</h1>
                 <p className='sm:w-2/3 text-clip  text-center '>
-                    Embark on a Journey of Practical Learning with Hands-On Assignments and Projects,
-                     Crafting Confidence at Every Step.
+                    Embark on a journey of practical learning with hands-On assignments and Projects,
+                     crafting confidence at every step.
                 </p>
             </div>
          <div className= 'bg-slate-200 h-full border-4 border-double border-white py-12  sm:w-1/2 flex flex-col justify-end items-center'>
                 <img height={200} width={200} src="https://res.cloudinary.com/dtsuvx8dz/image/upload/v1706986641/mvqnihoedrcvrpzixkiy.png" alt="" />
-                <h1 className='py-12 text-2xl sm:text-3xl  text-center '>Receive Comprehensive Doubt Resolution Assistance</h1>
-                <p className='sm:w-2/3 px-2 text-clip  text-center'>Access Personalized 1-on-1 Chat Support for Doubt Resolution Daily from 6PM to 9AM,
-                    Including Weekends. Additionally, </p>
+                <h1 className='py-12 text-2xl sm:text-3xl  text-center '>Receive comprehensive doubt resolution assistance</h1>
+                <p className='sm:w-2/3 px-2 text-clip  text-center'>Access personalized 1-on-1 chat Support for doubt resolution daily from 6PM to 9AM,
+                    including weekends. Additionally, </p>
             </div>
     
         </div>
         <div className='flex flex-col justify-center items-center text-center bg-slate-100 py-16 border-t-2 border-white'>
             <h1 className='pb-8 text-3xl  text-center'>Explore Additional Key Course Highlights</h1>
             
-            <ol className=' w-3/4 grid grid-cols-1 gap-x-8 gap-y-10 [counter-reset:video] sm:grid-cols-2 lg:grid-cols-4'>
+            <ol className=' w-3/4 grid grid-cols-1 gap-x-8 gap-y-10 [counter-reset:video] sm:grid-cols-2 lg:grid-cols-3'>
  {videos.map((video) => (
             <li key={video.title} className="[counter-increment:video] ">
               <div
