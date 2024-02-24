@@ -5,7 +5,8 @@ import emailjs from '@emailjs/browser';
 import Pattern from "./Pattern.jsx";
 import Button from "./Button.jsx";
 import { Container } from "./Container.jsx";
-
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 
 
 const initValues = { name: "", email: "", phnumber: "", message: "",Whatsapp_No:"" };
@@ -21,7 +22,7 @@ export default function Form() {
 
     emailjs.sendForm('service_2iu0c69', 'template_54c57ul', form.current, 'C8dPWZXnl8qXkxHD8')
       .then((result) => {
-
+      toast.success("Message sent, Our team will contact you shortly")
           console.log(result.text);
           e.target.reset();
       }, (error) => {
@@ -184,7 +185,7 @@ const [state, setState] = useState(initState);
            
             </div>
 <div className='flex flex-row justify-evenly items-center mt-6'>
-          <a
+          <button 
                 type="submit"
                 color="white"
                 className=" w-full text-center   py-4 bg-gradient-to-r from-gray-100/20 to-gray-300/30 px-24 rounded-2xl font-medium border-double border-8 text-slate-50 hover:text-slate-100   sm:relative sm:z-10  sm:flex-none"
@@ -192,10 +193,12 @@ const [state, setState] = useState(initState);
         
               >
                 Submit
-              </a> 
+              </button> 
             
 </div>
           </form>
+          
+            
         </Container>
       </div>
     </section>

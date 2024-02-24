@@ -4,7 +4,7 @@ const tiers = [
     {
         id: 'tier-hobby',
         name: 'For Indian student',
-        href: 'https://pages.razorpay.com/ZepDAM',
+        href: 'https://rzp.io/l/RS4sz8w',
         priceMonthly: "₹4999",
         ndprice: "₹9999",
 

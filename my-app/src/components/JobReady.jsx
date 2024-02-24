@@ -1,12 +1,29 @@
 
 import React, { useState, useEffect } from 'react';
 function JobReady() {
+  function getDaysInMonth(year, month) {
+  return new Date(year, month, 0).getDate();
+}
+const date = new Date();
+const currentYear = date.getFullYear();
+const currentMonth = date.getMonth() + 1; // 👈️ months are 0-based
 
+// 👇️ Current Month
+const daysInCurrentMonth = getDaysInMonth(
+  currentYear,
+  currentMonth,
+);
+console.log(daysInCurrentMonth); // 👉️ 31
 
-    const date = new Date();
-  const day = date.getDate() + 1;
+// 👇️ Other Months
+const daysInJanuary = getDaysInMonth(2025, currentMonth);
+console.log(daysInJanuary); // 👉️ 31
+
+const daysInSeptember = getDaysInMonth(2025, 9);
+console.log(daysInSeptember); //
+
+  const day = date.getDate();
   const month = date.toLocaleString('default', { month: 'long' });
-
 
     const [countdown, setCountdown] = useState(calculateCountdown());
 
@@ -20,11 +37,13 @@ function JobReady() {
 
   function calculateCountdown() {
     const now = new Date();
+    const day =   now.getDay() 
     const hours = 24 - now.getHours();
     const minutes = 60 - now.getMinutes();
     const seconds = 60 - now.getSeconds();
 
     return {
+      day: formatTime(day),
       hours: formatTime(hours),
       minutes: formatTime(minutes),
       seconds: formatTime(seconds)
@@ -190,7 +209,7 @@ function JobReady() {
       {/* Course Value */}
     <div className='flex flex-col justify-center items-center'>
       <h1 className='text-3xl text-center sm:text-6xl font-bold py-12 sm:w-4/6'>
-          Access the Complete Package: <span className='bg-clip-text text-transparent bg-gradient-to-t from-blue-400 to-blue-700 drop-shadow-md'>55+ hours contents, 200+ quizes, 5 Industry level projects</span> Valued at ₹50,000.
+          Access the Complete Package: <br className=' hidden sm:block' /> <span className='bg-clip-text text-transparent bg-gradient-to-t from-blue-400 to-blue-700 drop-shadow-md'>55+ hours contents, 200+ quizes,  <br className=' sm:hidden block' />5 Industry level projects</span> Valued at ₹50,000.
       </h1>
       <h1 className='text-3xl text-center sm:text-5xl font-bold py-12 w-4/5'>
           Available at an Offer Price of <span className='bg-clip-text text-transparent  bg-gradient-to-r from-blue-400 to-blue-800 drop-shadow-md'> ₹4,999 </span> .
@@ -199,7 +218,7 @@ function JobReady() {
         CLICK HERE TO ENROLL
       </a>
        <h1 className='text-3xl text-center sm:text-5xl font-bold py-12 w-4/5'>
-       <span className=' text-red-500  animate-pulse '>SALE</span>  Valid Until <span className=' text-red-500  animate-pulse '>{day} {month}</span> . Act Now!
+       <span className=' text-red-500  animate-pulse '>SALE</span>  Valid Until <span className=' text-red-500  animate-pulse '>{daysInJanuary} { month}</span> . Act Now!
        </h1>
        
       <div className='w-screen flex flex-row justify-center items-center   p-2 my-2 '>
@@ -221,7 +240,7 @@ function JobReady() {
         <div class="text-6xl text-center flex w-full items-center justify-center sm:scale-150 ">
            
             <div class="w-24 mx-1 p-2 bg-slate-300 text-white rounded-lg sm:block hidden">
-                <div class="font-mono leading-none bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-emerald-400" x-text="days">00</div>
+                <div class="font-mono leading-none bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-emerald-400" x-text="days">{countdown.day}</div>
                 <div class="font-mono uppercase text-sm leading-none">Days</div>
             </div>
             <div class="w-24 mx-1 p-2 bg-slate-300 text-white rounded-lg">

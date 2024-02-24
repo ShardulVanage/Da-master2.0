@@ -58,9 +58,9 @@ function Author() {
                   Number of students trained so far: <span>10000+</span> <br />
                                 Average Trainer Score: <span>9+</span> <br />
                           
-              <span>12+ years experience working in Data Analytics
+              <span>13+ years experience working in Data Analytics
                  and Data Sciences </span>across different industry verticals including telecom, cyber security, insurance, e-commerce etc.
-                <span> Owner of more than 20+ data communities over the globe, and runs a small YouTube channel on my name having 38,000+ subscribers</span>
+                <span> Owner of more than 20+ data communities over the globe, and runs a small YouTube channel on my name having 65,000+ subscribers</span>
             </p>
             <div className="mt-8 flex  justify-evenly  items-center flex-row ">
             
@@ -69,7 +69,7 @@ function Author() {
                 className=" sm:ml-16 inline-flex items-center text-base font-medium tracking-tight text-blue-400"
               >
                 <LinkdinIcon className="h-10 w-14 fill-current " />
-                <span className="sm:ml-4 pt-1 font-bold"> Linkdin</span>
+                <span className="sm:ml-4 pt-1 font-bold"> Linkedin</span>
              
               </a>
               <a
