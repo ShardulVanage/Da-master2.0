@@ -6,21 +6,19 @@ function JobReady() {
 }
 const date = new Date();
 const currentYear = date.getFullYear();
-const currentMonth = date.getMonth() + 1; // 👈️ months are 0-based
-
+const currentMonth = date.getMonth()+1; // 👈️ months are 0-based
+// console.log(currentMonth)
 // 👇️ Current Month
 const daysInCurrentMonth = getDaysInMonth(
   currentYear,
   currentMonth,
 );
-console.log(daysInCurrentMonth); // 👉️ 31
+// console.log(daysInCurrentMonth); // 👉️ 31
 
 // 👇️ Other Months
 const daysInJanuary = getDaysInMonth(2025, currentMonth);
-console.log(daysInJanuary); // 👉️ 31
 
-const daysInSeptember = getDaysInMonth(2025, 9);
-console.log(daysInSeptember); //
+
 
   const day = date.getDate();
   const month = date.toLocaleString('default', { month: 'long' });
@@ -217,8 +215,8 @@ console.log(daysInSeptember); //
       <a href='#free-chapters' className='text-white text-xs sm:text-xl bg-gradient-to-r from-blue-700 via-blue-800 to-gray-900 my-4  py-8 px-24 sm:px-36 rounded-2xl font-medium  border-double border-8' >
         CLICK HERE TO ENROLL
       </a>
-       <h1 className='text-3xl text-center sm:text-5xl font-bold py-12 w-4/5'>
-       <span className=' text-red-500  animate-pulse '>SALE</span>  Valid Until <span className=' text-red-500  animate-pulse '>{daysInJanuary} { month}</span> . Act Now!
+       <h1 className='text-3xl text-center sm:text-5xl font-bold pt-12 sm:py-12 w-4/5'>
+       <span className=' text-red-500  animate-pulse '>SALE</span>  Valid Until <span className=' text-red-500  animate-pulse '>{daysInCurrentMonth} { month}</span> . Act Now!
        </h1>
        
       <div className='w-screen flex flex-row justify-center items-center   p-2 my-2 '>
@@ -236,25 +234,32 @@ console.log(daysInSeptember); //
             </div> */}
             <div class=" w-screen flex items-center justify-center px-5 py-5" x-data="beer()" x-init="start()">
     <div class="text-slate-100 pb-8">
-        <h1 class="text-3xl text-center mb-3 font-extralight">.*</h1>
+       
         <div class="text-6xl text-center flex w-full items-center justify-center sm:scale-150 ">
-           
-            <div class="w-24 mx-1 p-2 bg-slate-300 text-white rounded-lg sm:block hidden">
-                <div class="font-mono leading-none bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-emerald-400" x-text="days">{countdown.day}</div>
+           <div className='flex flex-col sm:flex-row justify-between items-stretch'>
+            <div className='flex flex-row  '>
+<div class="w-24 mx-1 p-2 bg-slate-300 text-white rounded-lg mb-2 ">
+                <div class="font-mono leading-none bg-clip-text text-transparent bg-blue-700" x-text="days">{countdown.day}</div>
                 <div class="font-mono uppercase text-sm leading-none">Days</div>
             </div>
-            <div class="w-24 mx-1 p-2 bg-slate-300 text-white rounded-lg">
-                <div class="font-mono leading-none bg-clip-text text-transparent  bg-gradient-to-r from-blue-400 to-emerald-400" x-text="hours">{countdown.hours}</div>
+            <div class="w-24 mx-1 p-2 bg-slate-300 text-white rounded-lg mb-2">
+                <div class="font-mono leading-none bg-clip-text text-transparent bg-blue-700" x-text="hours">{countdown.hours}</div>
                 <div class="font-mono uppercase text-sm leading-none">Hours</div>
             </div>
-            <div class="w-24 mx-1 p-2 bg-slate-300 text-white rounded-lg">
-                <div class="font-mono leading-none bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-emerald-400" x-text="minutes">{countdown.minutes}</div>
+            </div>
+            <div className='flex flex-row '>
+           <div class="w-24 mx-1 p-2 bg-slate-300 text-white rounded-lg mb-2">
+                <div class="font-mono leading-none bg-clip-text text-transparent bg-blue-700" x-text="minutes">{countdown.minutes}</div>
                 <div class="font-mono uppercase text-sm leading-none">Minutes</div>
             </div>
-            <div class="w-24 mx-1 p-2 bg-slate-300 text-white rounded-lg">
-                <div class="font-mono leading-none bg-clip-text text-transparent  bg-gradient-to-r from-blue-400 to-emerald-400" x-text="seconds">{countdown.seconds}</div>
+            <div class="w-24 mx-1 p-2 bg-slate-300 text-white rounded-lg mb-2">
+                <div class="font-mono leading-none bg-clip-text text-transparent bg-blue-700" x-text="seconds">{countdown.seconds}</div>
                 <div class="font-mono uppercase text-sm leading-none">Seconds</div>
             </div>
+            </div>
+           </div>
+            
+           
             <div class="text-2xl mx-1 font-extralight"></div>
             
         </div>
