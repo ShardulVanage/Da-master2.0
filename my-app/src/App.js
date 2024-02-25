@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 import Testimonials from './components/Testimonials';
 import Certificate from './components/Certificate';
 import { ToastContainer } from 'react-toastify';
+import Faq from './components/Faq';
 
 function App() {
   return (
@@ -29,7 +30,8 @@ function App() {
      <Author/>
      <Testimonials/>
      <Certificate/>
-     {/* <Footer/> */}
+     <Faq/>
+     <Footer/>
     </div>
   );
 }
