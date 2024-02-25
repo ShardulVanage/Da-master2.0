@@ -7,8 +7,10 @@ function Hero() {
             <img className='drop-shadow-2xl h-12 m-1 bg-transparent ' src="https://res.cloudinary.com/dtsuvx8dz/image/upload/v1706986565/hqatxpsjdg3zeql20jfe.png" alt="" />
             <h1 className=' text-3xl font-extrabold font-mono text-white '>Zep Analytics</h1>
         </div>
+       
             <h2 className='text-3xl md:text-6xl w-11/12 sm:w-4/6 font-bold py-4 text-center'>Unleash Your Data Superpowers and Become a  <span className='bg-clip-text text-transparent bg-gradient-to-tr from-violet-500 to-orange-300'> Data Analytics </span>Superstar</h2>
  <div className= 'bg- flex  flex-col sm:flex-row  justify-center items-center'>
+     <img src="https://res.cloudinary.com/dtsuvx8dz/image/upload/v1687806712/whmgy2fkkrpsduevi9mk.png"  className=" sm:w-2/12 w-2/4 rounded-3xl"alt="" />
     <div className='w-screen  sm:w-5/12  p-8 sm:ml-0 pl-8 4 '>
         
         <h2 className='text-base sm:text-2xl  font-bold text-balance text-center sm:text-left py-2'>
