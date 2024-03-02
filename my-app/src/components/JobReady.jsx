@@ -23,31 +23,53 @@ const daysInJanuary = getDaysInMonth(2025, currentMonth);
   const day = date.getDate();
   const month = date.toLocaleString('default', { month: 'long' });
 
-    const [countdown, setCountdown] = useState(calculateCountdown());
 
-  useEffect(() => {
-    const timerID = setInterval(() => {
-      setCountdown(calculateCountdown());
+const [timeLeft, setTimeLeft] = useState(getTimeLeft());
+
+   
+
+ useEffect(() => {
+    const timerInterval = setInterval(() => {
+      setTimeLeft(getTimeLeft());
     }, 1000);
 
-    return () => clearInterval(timerID);
+    return () => clearInterval(timerInterval);
   }, []);
 
-  function calculateCountdown() {
+    function getTimeLeft() {
     const now = new Date();
-    const day =   now.getDay() 
-    const hours = 24 - now.getHours();
-    const minutes = 60 - now.getMinutes();
-    const seconds = 60 - now.getSeconds();
+    const endOfMonth = new Date(now.getFullYear(), now.getMonth() + 1, 0, 23, 59, 59); // Last day of current month at 23:59:59
+    const timeDifference = endOfMonth.getTime() - now.getTime();
 
-    return {
-      day: formatTime(day),
-      hours: formatTime(hours),
-      minutes: formatTime(minutes),
-      seconds: formatTime(seconds)
+ if (timeDifference <= 0) {
+      // If current time is past the end of the month, calculate time until the end of next month
+      const nextMonth = new Date(now.getFullYear(), now.getMonth() + 2, 0, 23, 59, 59); // Last day of next month at 23:59:59
+      const nextTimeDifference = nextMonth.getTime() - now.getTime();
+
+      const days = Math.floor(nextTimeDifference / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((nextTimeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((nextTimeDifference % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((nextTimeDifference % (1000 * 60)) / 1000);
+
+      return {
+        days,
+        hours,
+        minutes,
+        seconds
+      };
+    }
+  const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+     return {
+      days,
+      hours,
+      minutes,
+      seconds
     };
   }
-
   function formatTime(time) {
     return time < 10 ? `0${time}` : time;
   }
@@ -239,21 +261,21 @@ const daysInJanuary = getDaysInMonth(2025, currentMonth);
            <div className='flex flex-col sm:flex-row justify-between items-stretch'>
             <div className='flex flex-row  '>
 <div class="w-24 mx-1 p-2 bg-slate-300 text-white rounded-lg mb-2 ">
-                <div class="font-mono leading-none bg-clip-text text-transparent bg-blue-700" x-text="days">{countdown.day}</div>
+                <div class="font-mono leading-none bg-clip-text text-transparent bg-blue-700" x-text="days">{timeLeft.days}</div>
                 <div class="font-mono uppercase text-sm leading-none">Days</div>
             </div>
             <div class="w-24 mx-1 p-2 bg-slate-300 text-white rounded-lg mb-2">
-                <div class="font-mono leading-none bg-clip-text text-transparent bg-blue-700" x-text="hours">{countdown.hours}</div>
+                <div class="font-mono leading-none bg-clip-text text-transparent bg-blue-700" x-text="hours">{timeLeft.hours}</div>
                 <div class="font-mono uppercase text-sm leading-none">Hours</div>
             </div>
             </div>
             <div className='flex flex-row '>
            <div class="w-24 mx-1 p-2 bg-slate-300 text-white rounded-lg mb-2">
-                <div class="font-mono leading-none bg-clip-text text-transparent bg-blue-700" x-text="minutes">{countdown.minutes}</div>
+                <div class="font-mono leading-none bg-clip-text text-transparent bg-blue-700" x-text="minutes">{timeLeft.minutes}</div>
                 <div class="font-mono uppercase text-sm leading-none">Minutes</div>
             </div>
             <div class="w-24 mx-1 p-2 bg-slate-300 text-white rounded-lg mb-2">
-                <div class="font-mono leading-none bg-clip-text text-transparent bg-blue-700" x-text="seconds">{countdown.seconds}</div>
+                <div class="font-mono leading-none bg-clip-text text-transparent bg-blue-700" x-text="seconds">{timeLeft.seconds}</div>
                 <div class="font-mono uppercase text-sm leading-none">Seconds</div>
             </div>
             </div>
