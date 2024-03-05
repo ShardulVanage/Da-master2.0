@@ -23,10 +23,10 @@ function Hero() {
     <section className='text-white w-screen sm:h-screen bg-gradient-to-r from-gray-950  via-blue-900 to-blue-900/90 flex flex-col justify-center items-center '>
         <div className='flex flex-row  justify-center items-center py-8'>
             <img className='drop-shadow-2xl h-12 m-1 bg-transparent ' src="https://res.cloudinary.com/dtsuvx8dz/image/upload/v1706986565/hqatxpsjdg3zeql20jfe.png" alt="" />
-            <h1 className=' text-3xl font-extrabold font-mono text-white '>Zep Analytics</h1>
+            <h1 className=' text-2xl font-extrabold font-mono text-white '>Zep Analytics</h1>
         </div>
        
-            <h2 className='text-3xl md:text-6xl  sm:w-4/6 font-bold py-4 text-center'>Unleash Your Data Superpowers and Become a  <span className='bg-clip-text text-transparent bg-gradient-to-tr from-violet-500 to-orange-300'> Data Analytics </span>Superstar</h2>
+            <h2 className='text-3xl md:text-4xl  sm:w-4/6 font-bold py-4 text-center'>Unleash Your Data Superpowers and Become a  <span className='bg-clip-text text-transparent bg-gradient-to-tr from-violet-500 to-orange-300'> Data Analytics </span>Superstar</h2>
             <div className='bg- flex  flex-col sm:flex-row  justify-center items-center py-2'>
                 <div className='bg-slate-100/20 p-4 rounded-xl m-2  '>
                         {/* <div className='grid grid-rows-2 grid-flow-col gap-4'>
@@ -73,7 +73,7 @@ function Hero() {
                         </div>
                     </div>
                     <div className=' bg-white/30 p-4 rounded-lg'>
-        <video src='https://res.cloudinary.com/dtsuvx8dz/video/upload/v1709562852/jujruw095co3l8qna670.mp4' height={300} width={300} className='rounded-lg' autoPlay controls loop />
+        <video src='https://res.cloudinary.com/dtsuvx8dz/video/upload/v1709562852/jujruw095co3l8qna670.mp4' height={300} width={200} className='rounded-lg' autoPlay controls loop />
     </div>
                 
             </div>
