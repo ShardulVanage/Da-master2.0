@@ -26,9 +26,9 @@ function Hero() {
             <h1 className=' text-2xl font-extrabold font-mono text-white '>Zep Analytics</h1>
         </div>
        
-            <h2 className='text-3xl md:text-4xl  sm:w-4/6 font-bold py-4 text-center'>Unleash Your Data Superpowers and Become a  <span className='bg-clip-text text-transparent bg-gradient-to-tr from-violet-500 to-orange-300'> Data Analytics </span>Superstar</h2>
+            <h2 className='text-3xl md:text-6xl  sm:w-4/6 font-bold py-4 text-center'>Unleash Your Data Superpowers and Become a  <span className='bg-clip-text text-transparent bg-gradient-to-tr from-violet-500 to-orange-300'> Data Analytics </span>Superstar</h2>
             <div className='bg- flex  flex-col sm:flex-row  justify-center items-center py-2'>
-                <div className='bg-slate-100/20 p-4 rounded-xl m-2  '>
+                <div className='bg-slate-100/20 p-2 py-8 rounded-xl m-2   '>
                         {/* <div className='grid grid-rows-2 grid-flow-col gap-4'>
                             {pcontent.map(pcontents =>(
                                 <div  key={pcontents.url} className=' flex justify-start items-center bg-white/20 p-2 rounded-2xl sm:text-base text-xs py-3 '>
